@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Task 4. WEB UI Forms
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple web-based User Interface (UI) for managing servers using a RESTful API. The UI provides three main functionalities:
 
-## Available Scripts
+1. **Create Server**: This feature allows to create a new server by providing the server's ID, name, language, and framework. Upon creation, a success message is displayed.
 
-In the project directory, you can run:
+2. **Search Server**: You can search for servers using various criteria:
+   - **Search by ID**: Enter a server ID to retrieve detailed information about a specific server.
+   - **Search by Name**: Enter a server name to search for servers with matching names.
+   - **Show All Servers**: View a list of all servers in the database.
 
-### `npm start`
+3. **Delete Server**: This feature enables to delete a server by providing its ID. Upon successful deletion, a success message is displayed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To use this UI, follow these steps:
 
-### `npm test`
+1. Clone the project repository to your local machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install the necessary dependencies using npm or yarn:
 
-### `npm run build`
+   ```
+   npm install
+   # or
+   yarn install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+    ```
+    npm start
+    # or
+    yarn start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Access the UI by opening your web browser and navigating to http://localhost:3000.
 
-### `npm run eject`
+## Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Create Server
+![Alt text](screenshots/CreateServer.png)
+Screenshot: Create a new server with details.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Search Server - ShowAll
+![Alt text](screenshots/ShowAllServers.png)
+Screenshot: Show all servers.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Search Server By Id
+![Alt text](screenshots/SearchById.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Screenshot: Search for servers by ID.
 
-## Learn More
+### Search Server By Name
+![Alt text](screenshots/SearchByName.png)
+Screenshot: Search for servers Name.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Search Server - Server Not Found
+![Alt text](screenshots/ServerNotFound.png)
+Screenshot: Server do not exists.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Delete Server
+![Alt text](screenshots/DeleteServer.png)
+Screenshot: Delete a server by providing its ID.
 
-### Code Splitting
+## Technologies Used
+- React.js: Frontend framework for building the UI.
+- Axios: HTTP client for making API requests.
+- CSS: Styling the UI components.
+- Other libraries and tools as needed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## API Integration
+This UI is designed to work with a backend server that provides the required RESTful API endpoints for server management. Ensure that the backend server is running and accessible for full functionality.
